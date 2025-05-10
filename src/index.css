@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+body {
+    background-color: theme('colors.zinc.900');
+    font-family: 'Inter', sans-serif;
+}
+
+@layer components {
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      filter: brightness(0) invert(1);
+    }
+
+    input[type="date"]::-moz-calendar-picker-indicator {
+      filter: brightness(0) invert(1);
+    }
+
+    .scrollbar {
+      scrollbar-width: thin;
+      scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+    }
+}
