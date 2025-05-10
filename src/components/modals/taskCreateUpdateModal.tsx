@@ -63,7 +63,7 @@ export default function TaskCreateUpdateModal({ isOpen, initialData, onSave, onC
         className="w-full max-w-md bg-zinc-800 rounded-lg p-4 relative"
       >
         <h2 className="text-zinc-50 text-2xl mb-6">
-          {initialData ? 'Editar Tarefa' : 'Nova Tarefa'}
+          {initialData?.title ? 'Editar Tarefa' : 'Nova Tarefa'}
         </h2>
 
         <label className="block mb-4 text-zinc-50">
@@ -143,7 +143,7 @@ export default function TaskCreateUpdateModal({ isOpen, initialData, onSave, onC
             type="submit"
             className="px-4 py-2 bg-sky-600 text-zinc-50 rounded hover:bg-sky-700 cursor-pointer"
           >
-            {initialData ? 'Salvar' : 'Criar'}
+            {initialData?.title ? 'Salvar' : 'Criar'}
           </button>
         </div>
       </form>
