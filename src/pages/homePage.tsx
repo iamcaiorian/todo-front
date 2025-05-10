@@ -66,7 +66,7 @@ export default function HomePage() {
             border-dashed
             border-zinc-600
             rounded-lg cursor-pointer
-            h-full flex
+            h-min-32 flex
             items-center
             justify-center
             text-zinc-600
