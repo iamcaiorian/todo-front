@@ -1,54 +1,72 @@
-# React + TypeScript + Vite
+# ✅ TO DO List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação web para gerenciamento de tarefas, com visual moderno, responsivo e dois modos de visualização (kanban e lista).
 
-Currently, two official plugins are available:
+🎯 [Protótipo no Figma](https://www.figma.com/design/uFUMwUxJg3eEBNVUayPbuO/TO-DO-List?node-id=0-1&t=U9HU0SwsNwF6vm40-1)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📌 Criação de listas de tarefas personalizadas
+- 🧩 Visualização em modo Kanban por prioridade
+- 📃 Visualização em lista com filtro (de prioridade)
+- 🗓️ Definição de prazo e prioridade
+- 🔁 Edição e exclusão de tarefas e listas
+- 💡 UI moderna com ícones e feedbacks visuais
+- 🌙 Modo escuro por padrão
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🖼️ Interface
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Home
+![kanban](./docs/home-view.png)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### Modo Kanban
+![kanban](./docs/kanban-view.png)
+
+### Modo Lista
+![lista](./docs/list-view.png)
+
+### Modal de edição de tarefa
+![edit-task](./docs/edit-task.png)
+
+### Criação de nova lista
+![new-list](./docs/create-list.png)
+
+### Confirmação de exclusão
+![delete-modal](./docs/delete-list.png)
+
+---
+
+## 🚀 Tecnologias e Bibliotecas
+
+| Tecnologias | Descrição |
+|-------------|-----------|
+| [React](https://react.dev/) | Biblioteca principal de UI |
+| [Vite](https://vitejs.dev/) | Ferramenta de build e dev server |
+| [TypeScript](https://www.typescriptlang.org/) | Tipagem estática |
+| [Tailwind CSS](https://tailwindcss.com/) | Estilização com utilitários |
+| [React Hook Form](https://react-hook-form.com/) | Manipulação de formulários |
+| [Zod](https://zod.dev/) | Validação de dados em formulários |
+| [Axios](https://axios-http.com/) | Requisições HTTP |
+| [React Router](https://reactrouter.com/en/main) | Roteamento SPA |
+| [Phosphor Icons](https://phosphoricons.com/) | Ícones modernos e personalizáveis |
+
+---
+
+## 📦 Scripts disponíveis
+
+```bash
+# Executa a aplicação em modo desenvolvimento
+npm run dev
+
+# Compila para produção
+npm run build
+
+# Abre preview da build
+npm run preview
+
+# Verifica problemas de lint
+npm run lint
