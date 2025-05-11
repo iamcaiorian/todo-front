@@ -51,11 +51,11 @@ export default function TodolistCard({ todolist, completedCount, totalCount, onC
 
       <div className="p-3 flex flex-col flex-1 justify-between">
         <div>
-          <h3 className="text-zinc-50 text-xl font-semibold mb-1">
+          <h3 className="text-zinc-50 text-xl font-semibold mb-1 truncate">
             {todolist.title}
           </h3>
           {todolist.subtitle && (
-            <p className="text-zinc-200 text-sm">
+            <p className="text-zinc-200 text-sm line-clamp-2 break-words">
               {todolist.subtitle}
             </p>
           )}

@@ -74,7 +74,7 @@ export default function TodolistPage() {
             <CaretLeft size={20} weight="bold" />
           </button>
 
-          <h1 className="text-3xl font-bold text-zinc-50">
+          <h1 className="text-3xl font-bold text-zinc-50 truncate max-w-[480px]">
             { todolist?.title }
           </h1>
 

@@ -66,12 +66,13 @@ export default function HomePage() {
             border-dashed
             border-zinc-600
             rounded-lg cursor-pointer
-            h-min-32 flex
+            w-full min-h-[132px] h-full flex
             items-center
             justify-center
             text-zinc-600
             hover:border-zinc-500
-            hover:text-zinc-400"      
+            hover:text-zinc-400
+          "      
         >
           <PlusCircle size={48} weight='fill'/>
         </button>

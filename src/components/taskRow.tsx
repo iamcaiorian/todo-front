@@ -51,6 +51,7 @@ export default function TaskRow({
 
           <span className={`
             ${task.done ? 'line-through text-zinc-500 text-lg' : 'text-zinc-50 text-lg'}
+            truncate max-w-[600px]
           `}>
             {task.title}
           </span>
@@ -86,8 +87,9 @@ export default function TaskRow({
           rounded-b-md
           border-t border-zinc-600
           text-sm font-medium
+          whitespace-pre-wrap break-words
         ">
-          {task.description ? task.description : "*Adicione uma descrição na sua tarefa.*"}
+          {task.description || "*Adicione uma descrição na sua tarefa.*"}
         </div>
       )}
     </div>

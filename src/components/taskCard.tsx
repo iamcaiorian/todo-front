@@ -28,14 +28,27 @@ export default function TaskCard({ task, onEdit, onDelete, onToggleDone }: Props
             </div>
 
             <div className="w-full p-3 flex flex-col items-start space-y-1">
-                <h3 className={`text-zinc-50 font-semibold ${task.done ? 'line-through text-zinc-500' : ''}`}>
+                <h3
+                    className={`
+                        font-semibold text-zinc-50
+                        ${task.done ? 'line-through text-zinc-500' : ''}
+                        truncate max-w-[192px] text-base
+                    `}
+                    title={task.title}
+                >
                     {task.title}
                 </h3>
 
                 {task.description && (
-                    <p className={`text-zinc-300 text-sm line-clamp-3 ${task.done ? 'line-through text-zinc-500' : ''}`}>
+                    <p
+                        className={`
+                            text-zinc-300 text-sm max-w-[192px]
+                            line-clamp-3 break-words whitespace-pre-wrap
+                            ${task.done ? 'line-through text-zinc-500' : ''}
+                        `}
+                    >
                         {task.description}
-                    </p>
+                    </p>                  
                 )}
 
                 <div className='w-full flex justify-end'>
