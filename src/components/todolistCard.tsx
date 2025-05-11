@@ -27,7 +27,7 @@ export default function TodolistCard({ todolist, completedCount, totalCount, onC
         hover:-translate-y-1
         flex
         flex-col
-        h-full
+        min-h-[168px]
       "
     >
       <div
