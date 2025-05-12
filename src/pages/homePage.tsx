@@ -7,6 +7,7 @@ import TodolistCard from '../components/todolistCard'
 import TodolistCreateUpdateModal from '../components/modals/todolistCreateUpdateModal'
 import DeleteModal from '../components/modals/deleteModal'
 import { getTasks } from '../services/taskServices'
+import logo from '../assets/logoApp.png'
 
 
 export default function HomePage() {
@@ -43,7 +44,7 @@ export default function HomePage() {
     <div className="p-6">
       <div className="flex justify-between items-center mb-16">
         <div className="flex items-center space-x-3">
-          <img src="/src/assets/logoApp.png" className="h-16" />
+          <img src={logo} className="h-16" />
         </div>
 
         <div className="relative">
