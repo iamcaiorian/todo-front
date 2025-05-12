@@ -12,6 +12,7 @@ import { PriorityOption, PRIORITY_OPTIONS, PRIORITY_LABELS } from '../constants/
 import { VIEW_MODE } from '../constants/viewMode'
 import type { ViewMode } from '../constants/viewMode'
 import TaskBoard from '../components/tasksBoard'
+import logo from '../assets/logoApp.png'
 
 export default function TodolistPage() {
   const { id } = useParams<{ id: string }>()
@@ -51,7 +52,7 @@ export default function TodolistPage() {
     <div className="p-6">
       <div className='w-full flex items-center mb-16 justify-between'>
         <div>
-          <img src="/src/assets/logoApp.png" className="h-16" />
+          <img src={logo} className="h-16" />
         </div>
 
         <button
